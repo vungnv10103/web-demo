@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1 Iframe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>   
+        <div class="main" id="main">      
+            <video style="width: 500px;height: 280px;" id="vmain" poster="./image/anh2.png" autoplay controls>
+
+            </video>     
+        </div>
+        <div class="box">
+            <div class="box1" id="b1" onclick="run1()">
+                <a href="#"><video  poster="./image/git_64.png"></video></a>
+            </div>
+            <hr>
+            <div class="box2" id="b2" onclick="run2()">
+                <a href="#"><video  poster="./image/letfarm.jpg"></video></a>
+            </div>
+            <hr>
+            <div class="box3" id="b3" onclick="run3()">
+                <a href="#"><video  poster="./image/cartoon_bear.png"></video></a>
+            </div>
+        </div> 
+</body>
+</html>
+<script>
+    let v1 = document.getElementById('b1')
+    let v2 = document.getElementById('b2')
+    let v3 = document.getElementById('b3')
+    let v = document.getElementById('vmain')
+    function run1(){
+        v.src = './mp4/Build-Web-P3(nice@_@).mp4'
+    }
+    function run2(){
+       v.src = './mp4/LetFarm.mp4'
+    }
+    function run3(){
+        v.src = './mp4/lovely.mp4'
+    }
+</script>
